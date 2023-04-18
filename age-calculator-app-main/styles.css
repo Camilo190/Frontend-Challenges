@@ -1,0 +1,115 @@
+:root{
+    --bg-color: rgb(255, 255, 255);
+    --age-cal-color: rgb(240,240,240);
+    --title-color: rgb(111, 111, 111);
+    --purple: rgb(134, 78, 255);
+    --ligth-purple: rgb(134, 76, 255);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --light-grey: hsl(0,0%,8%);
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: poppins-bold;
+    src: url(assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: poppins-bolditalic;
+    src: url(assets/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: poppins-extrabold;
+    src: url(assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: poppins-extrabolditalic;
+    src: url(assets/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: poppins-italic;
+    src: url(assets/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: var(--age-cal-color);
+}
+.age-calculator{
+    background-color: var(--bg-color);
+    border-radius: 20px 20px 120px 10px;
+    padding: 20px;
+}
+.input{
+    display: flex;
+}
+.input div {
+    width: 9rem;
+}
+.input p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: x-small;
+    margin-bottom: 2px;
+    font-family: poppins-bold;
+}
+.input input {
+    font-size: x-large;
+    width: 85%;
+    border-radius: 0.3rem;
+    padding-left: 0.8rem;
+    height: 3.5rem;
+    border: 1px solid var(--light-grey);
+    font-family: poppins-bold;
+    font-weight: 700;
+}
+input:focus {
+    border: 1px solid var(--purple);
+}
+input::placeholder{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+
+.break{
+    display: flex;
+    width: 100%;
+}
+.line {
+    display: flex;
+    align-items: center;
+}
+.break .line hr {
+    width: 30rem;
+    color: var(--smokey-grey);
+}
+.img {
+    background-color: var(--ligth-purple);
+    border-radius: 50%;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 50%;
+}
+.result div p{
+    font-size: 50px;
+    font-family: poppins-bolditalic;
+    text-transform: lowercase;
+}
+.result div span{
+    color: var(--purple);
+}
