@@ -6,6 +6,7 @@
     --ligth-purple: rgb(134, 76, 255);
     --smokey-grey: hsl(0, 1%, 44%);
     --light-grey: hsl(0,0%,8%);
+    --light-red: hsl(0, 100%, 67%);
 }
 *{
     margin: 0;
@@ -101,6 +102,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 img {
     width: 50%;
@@ -112,4 +114,11 @@ img {
 }
 .result div span{
     color: var(--purple);
+}
+.error {
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: normal;
+    color: var(--light-red);
+    font-family: poppins-italic;
 }

@@ -20,16 +20,19 @@
     <div class="age-calculator">
       <div class="input">
         <div>
-          <p>Day</p>
-          <input type="text" placeholder="DD">
+          <p class="label-d">Day</p>
+          <input type="text" placeholder="DD" id="day">
+          <span class="error day-error"></span>
         </div>
         <div>
-          <p>Month</p>
-          <input type="text" placeholder="MM">
+          <p class="label-m">Month</p>
+          <input type="text" placeholder="MM" id="month">
+          <span class="error month-error"></span>
         </div>
         <div>
-          <p>Year</p>
-          <input type="text" placeholder="YYYY">
+          <p class="label-y">Year</p>
+          <input type="text" placeholder="YYYY" id="year">
+          <span class="error year-error"></span>
         </div>
       </div>
       <div class="break">
@@ -42,13 +45,13 @@
       </div>
       <div class="result">
         <div>
-          <p><span>--</span> years</p>
+          <p><span class="r-year">--</span> years</p>
         </div>
         <div>
-          <p><span>--</span> months</p>
+          <p><span class="r-month">--</span> months</p>
         </div>
         <div>
-          <p><span>--</span> days</p>
+          <p><span class="r-day">--</span> days</p>
         </div>
       </div>
     </div>
@@ -70,5 +73,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Camilo Ciro Orozco</a>.
   </div>
+
+  <script src="actions.js"></script>
 </body>
 </html>
