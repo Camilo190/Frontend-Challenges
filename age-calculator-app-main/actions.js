@@ -13,6 +13,7 @@ const errorDay = document.querySelector(".day-error");
 const currentDate = new Date();
 const redColor = "hsl(0, 100%, 67%)";
 const grayColor = "hsl(0,0%,8%)";
+const smokeyGrayColor = "hsl(0, 1%, 44%)";
 const fullDaysMonths = [1,3,5,7,8,10,12];
 /**
  * action button
@@ -191,7 +192,7 @@ function cleanForm() {
 function cleanErrorsDay() {
     inputDay.style.borderColor = grayColor;
     errorDay.innerHTML = "";
-    labelDay.style.color = "black";
+    labelDay.style.color = smokeyGrayColor;
 }
 /**
  * Clean the errors messages of the month input
@@ -199,7 +200,7 @@ function cleanErrorsDay() {
 function cleanErrorsMonth() {
     inputMonth.style.borderColor = grayColor;
     errorMonth.innerHTML = "";
-    labelMonth.style.color = "black";
+    labelMonth.style.color = smokeyGrayColor;
 }
 /**
  * Clean the errors messages of the year input
@@ -207,5 +208,5 @@ function cleanErrorsMonth() {
 function cleanErrorsYear() {
     inputYear.style.borderColor = grayColor;
     errorYear.innerHTML = "";
-    labelYear.style.color = "black";
+    labelYear.style.color = smokeyGrayColor;
 }

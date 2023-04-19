@@ -37,7 +37,7 @@
     src: url(assets/fonts/Poppins-Regular.ttf);
 }
 .container{
-    height: 90vh;
+    height: 98vh;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -56,6 +56,7 @@
     width: 9rem;
 }
 .input p {
+    color: var(--smokey-grey);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: x-small;
@@ -68,7 +69,7 @@
     border-radius: 0.3rem;
     padding-left: 0.8rem;
     height: 3.5rem;
-    border: 1px solid var(--light-grey);
+    border: 1px solid var(--smokey-grey);
     font-family: poppins-bold;
     font-weight: 700;
 }
@@ -78,6 +79,7 @@ input:focus {
 input::placeholder{
     font-size: 1.5rem;
     font-weight: 100;
+    color: var(--smokey-grey);
 }
 
 
@@ -108,7 +110,8 @@ img {
     width: 50%;
 }
 .result div p{
-    font-size: 50px;
+    margin-top: -2rem;
+    font-size: 5rem;
     font-family: poppins-bolditalic;
     text-transform: lowercase;
 }
