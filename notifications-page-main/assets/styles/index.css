@@ -1,112 +1,117 @@
-:root{
-    --white: hsl(0,0%,100%);
-    --red: hsl(1,90%,64%);
-    --blue: hsl(219,85%,26%);
-    --light-grayish-blue1: hsl(210, 60%, 98%);
-    --light-grayish-blue2: hsl(205, 33%, 90%);
-    --grayish-blue: hsl(219,14%,63%);
-    --dark-grayish-blue: hsl(219, 12%, 42%);
-    --very-dark-blue: hsl(224,21%,14%);
-    
+:root {
+  --white: hsl(0, 0%, 100%);
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+  --light-grayish-blue1: hsl(210, 60%, 98%);
+  --light-grayish-blue2: hsl(205, 33%, 90%);
+  --grayish-blue: hsl(219, 14%, 63%);
+  --dark-grayish-blue: hsl(219, 12%, 42%);
+  --very-dark-blue: hsl(224, 21%, 14%);
 }
 @font-face {
-    font-family: plus-jakarta;
-    src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
+  font-family: plus-jakarta;
+  src: url(../fonts/PlusJakartaSans-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family: plus-jakarta-bold;
-    src: url(../fonts/static/PlusJakartaSans-ExtraBold.ttf);
+  font-family: plus-jakarta-bold;
+  src: url(../fonts/static/PlusJakartaSans-ExtraBold.ttf);
 }
 @font-face {
-    font-family: plus-jakarta-medium;
-    src: url(../fonts/static/PlusJakartaSans-Medium.ttf);
+  font-family: plus-jakarta-medium;
+  src: url(../fonts/static/PlusJakartaSans-Medium.ttf);
 }
-*{
-    margin: 0;
-    box-sizing: border-box;
-    font-family: plus-jakarta;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: plus-jakarta;
 }
-main{
-    min-height: 97vh;
-    display: flex;
-    background-color: rgb(240, 240, 240);
-    padding: 5% 33%;
+main {
+  min-height: 97vh;
+  display: flex;
+  background-color: rgb(240, 240, 240);
+  padding: 5% 33%;
 }
 .container {
-    background-color: var(--white);
-    padding: 5%;
-    border-radius: 15px;
+  background-color: var(--white);
+  padding: 5%;
+  border-radius: 15px;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
-.noti-title{
-    font-weight: 800;
-    font-size: 1.5rem;
+.noti-title {
+  font-weight: 800;
+  font-size: 1.5rem;
 }
-.noti-number{
-    color: var(--white);
-    background-color: var(--blue);
-    font-size: 1rem;
-    margin-left: 0.625rem;
-    padding: 0.25rem 0.725rem;
-    border-radius: 5px;
+.noti-number {
+  color: var(--white);
+  background-color: var(--blue);
+  font-size: 1rem;
+  margin-left: 0.625rem;
+  padding: 0.25rem 0.725rem;
+  border-radius: 5px;
 }
-.mark-read{
-    font-size: 1rem;
-    color: var(--dark-grayish-blue);
-    font-weight: 500;
+.mark-read {
+  font-size: 1rem;
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
 }
-.mark-read:hover{
-    color: var(--blue);
-    cursor: pointer;
+.mark-read:hover {
+  color: var(--blue);
+  cursor: pointer;
 }
-.mark-read:active{
-    color: var(--dark-grayish-blue);
+.mark-read:active {
+  color: var(--dark-grayish-blue);
 }
-.notification{
-    font-size: 14px;
-    padding: 2% 2%;
-    margin-top: 1%;
-    display: flex;
-    background-color: var(--light-grayish-blue1);
-    border-radius: 10px;
+.notification {
+  font-size: 14px;
+  padding: 2% 2%;
+  margin-top: 1%;
+  display: flex;
+  background-color: var(--white);
+  border-radius: 10px;
 }
-img{
-    width: 35px;
-    height: 35px;
+.unread {
+  background-color: var(--light-grayish-blue1);
 }
-.inf{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 1rem;
+.unread:active {
+  background-color: var(--light-grayish-blue2);
 }
-.picture{
-    margin-left: auto;
+img {
+  width: 35px;
+  height: 35px;
 }
-.picture:hover{
-    cursor: pointer;
+.inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
 }
-.time{
-    color: var(--grayish-blue);
-    font-weight: 500;
+.picture {
+  margin-left: auto;
 }
-.link{
-    font-weight: 800;
+.picture:hover {
+  cursor: pointer;
 }
-.link:hover{
-    cursor: pointer;
-    color: var(--blue);
+.time {
+  color: var(--grayish-blue);
+  font-weight: 500;
 }
-.link:active{
-    color: var(--dark-grayish-blue);
+.link {
+  font-weight: 800;
 }
-.message{
-    margin-top: 1rem;
-    padding: 15px;
-    border-radius: 5px;
-    background-color: var(--light-grayish-blue2);
+.link:hover {
+  cursor: pointer;
+  color: var(--blue);
+}
+.link:active {
+  color: var(--dark-grayish-blue);
+}
+.message {
+  margin-top: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: var(--light-grayish-blue2);
 }
