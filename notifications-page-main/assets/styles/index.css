@@ -26,10 +26,10 @@
   font-family: plus-jakarta;
 }
 main {
-  min-height: 97vh;
+  min-height: 98vh;
   display: flex;
   background-color: rgb(240, 240, 240);
-  padding: 5% 33%;
+  padding: 2% 33%;
 }
 .container {
   background-color: var(--white);
