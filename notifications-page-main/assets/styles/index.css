@@ -26,7 +26,6 @@
   font-family: plus-jakarta;
 }
 main {
-  min-height: 98vh;
   display: flex;
   background-color: rgb(240, 240, 240);
   padding: 2% 33%;
