@@ -11,6 +11,8 @@ function clickNotification() {
   unreadNotification.forEach((element) => {
     element.addEventListener("click", () => {
       if (element.classList.contains("unread")) {
+        var redBall = element.querySelector("div > p > span:last-child");
+        redBall.remove();
         element.classList.remove("unread");
         this.notificationsLeft.textContent =
           document.querySelectorAll(".unread").length;
@@ -25,6 +27,10 @@ function markAllAsRead() {
     var unreadNotification = document.querySelectorAll(".unread");
     unreadNotification.forEach((element) => {
       element.classList.remove("unread");
+    });
+    var redBall = document.querySelectorAll(".red-ball");
+    redBall.forEach((element) => {
+      element.remove();
     });
     this.notificationsLeft.textContent = 0;
   });
@@ -43,18 +49,22 @@ function text() {
     var timeP = document.createElement("p");
     var messageP = document.createElement("p");
     var photoNotic = document.createElement("img");
+    var unreadSpan = document.createElement("span");
 
     timeP.classList.add("time");
     timeP.appendChild(document.createTextNode(element.time));
 
     nameSpan.classList.add("link");
     nameSpan.appendChild(document.createTextNode(element.author));
+
+    unreadSpan.classList.add("red-ball");
+    unreadSpan.appendChild(document.createTextNode("•"));
     if (!element.activity) {
-      infP.append(nameSpan, " ", nsText);
+      infP.append(nameSpan, " ", nsText, " ", unreadSpan);
     } else {
       activitySpan.classList.add("link");
       activitySpan.appendChild(document.createTextNode(element.activity));
-      infP.append(nameSpan, " ", nsText, " ", activitySpan);
+      infP.append(nameSpan, " ", nsText, " ", activitySpan, " ", unreadSpan);
     }
 
     infDiv.classList.add("inf");
